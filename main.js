@@ -7,6 +7,7 @@ const toggleMenuOne = e => {
 
 const toggleMenuTwo = e => {
   menuTwo.style.display = "flex";
+  menuOne.style.display = "none";
 };
 
 document

@@ -1,0 +1,360 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.logo {
+  color: #3898ec;
+  font-size: 60px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.search-input {
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  overflow: visible;
+  width: 50%;
+  margin-bottom: 0px;
+  float: none;
+
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.search-button {
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  float: none;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3898ec;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  color: #9b9b9b;
+  text-align: center;
+  width: 100%;
+}
+
+.resultats-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+.resultats {
+  margin-top: 45px;
+}
+
+.resultat {
+  margin-top: 25px;
+}
+
+.resultats-title {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lien-resultat {
+  font-size: 20px;
+}
+
+.lien-resultat-2 {
+  font-size: 14px;
+  padding-top: 8px;
+  color: green;
+}
+
+.people-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  background-color: rgb(234, 235, 238);
+  height: 100%;
+}
+
+.profile-picture {
+  position: relative;
+  top: 60px;
+  margin-left: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 9999px;
+  background-image: url("./images/zoeprofile.jpg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+}
+
+.people-header {
+  color: white;
+  font-size: 25px;
+  background-color: #464691;
+  width: 100%;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people-header div:nth-child(2) {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.avatar {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  margin-left: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 9999px;
+  background-image: url("./images/avatar.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.profile-hero {
+  background-image: url("./images/indiens.jpg");
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-hero-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  position: relative;
+  top: 80px;
+  margin-left: 20px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.add-button {
+  position: relative;
+  top: 80px;
+  margin-left: 80px;
+  color: black;
+  font-size: 15px;
+  background-color: rgb(234, 235, 238);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.left-column {
+  flex-basis: 30%;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.right-column {
+  flex-basis: 70%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.photo-grid {
+  width: fit-content;
+  height: fit-content;
+  background: white;
+}
+
+.photo-grid-title {
+  padding: 15px;
+}
+
+.photo-grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+  border-top: 2px solid rgb(234, 235, 238);
+}
+
+.photo-grid-images div {
+  margin: 5px;
+}
+
+.photo-grid-images div:nth-child(1) {
+  margin: 5px;
+  background-image: url("./images/zoe/1.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+  transform: rotateZ(90deg);
+}
+
+.photo-grid-images div:nth-child(2) {
+  margin: 5px;
+  background-image: url("./images/zoe/2.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+  transform: rotateZ(90deg);
+}
+
+.photo-grid-images div:nth-child(3) {
+  margin: 5px;
+  background-image: url("./images/zoe/3.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+}
+
+.photo-grid-images div:nth-child(4) {
+  margin: 5px;
+  background-image: url("./images/zoe/4.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+}
+
+.photo-grid-images div:nth-child(5) {
+  margin: 5px;
+  background-image: url("./images/zoe/5.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+}
+
+.photo-grid-images div:nth-child(6) {
+  margin: 5px;
+  background-image: url("./images/zoe/6.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+}
+
+.post {
+  background-color: white;
+  box-sizing: border-box;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(234, 235, 238);
+}
+
+.profile-picture-post {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background-image: url("./images/zoeprofile.jpg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+  border: 2px solid rgb(234, 235, 238);
+}
+
+.post-text {
+  position: relative;
+  margin: 10px;
+  top: 5px;
+}
+
+.post-title {
+  color: #464691;
+}
+
+.post-date {
+  color: rgb(148, 148, 148);
+  font-size: 12px;
+}
+
+.post-image {
+  margin: 10px;
+  height: 400px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding-bottom: 10px;
+  /* border: 2px solid rgb(234, 235, 238); */
+}
+
+.post:nth-child(1) .post-image {
+  background-image: url("./images/zoeprofile.jpg");
+}
+
+.post:nth-child(2) .post-image {
+  background-image: url("./images/zoe/5.JPG");
+}
+
+.post:nth-child(3) .post-image {
+  background-image: url("./images/zoe/6.JPG");
+  background-size: auto auto;
+  height: 500px;
+}
